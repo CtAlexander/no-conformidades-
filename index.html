@@ -149,6 +149,30 @@
         .nav-buttons button:hover {
             background-color: #009847;
         }
+        .boton-regresar {
+    display: inline-block;
+    width: auto;
+    padding: 15px 30px;
+    background-color: #00b954;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-regresar:hover {
+    background-color: #009847;
+}
+
+.boton-regresar:active {
+    background-color: #007b33;
+}
+
     </style>
 </head>
 <body>
@@ -161,6 +185,9 @@
             <li>Agregue, guarde y navegue entre las no conformidades.</li>
             <li>Optimice sus procesos de calidad.</li>
         </ul>
+
+          <a href="https://ctalexander.github.io/ACEITES-Y-LIPIDOS-BD-/" class="boton-regresar">Regresar a la Plataforma</a>
+
     </div>
 
 
@@ -169,7 +196,11 @@
         <h1>No Conformidad</h1>
         <textarea id="descripcion" placeholder="Descripción de la no conformidad"></textarea>
         <button class="button" id="guardarBtn">Guardar</button>
+     
         <button class="button" id="verBtn">Ver No Conformidades</button>
+
+
+      
 
         <div class="no-conformidad" id="noConformidadDisplay" style="display: none;">
             <p id="descripcionDisplay"></p>
